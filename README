@@ -1,0 +1,30 @@
+
+Note: 
+habit from previous job - no commens just try to make the code fluent to be self documenting
+
+Issue: 
+For some reason I couldn't get my VS2022 to properly setup a solution with multiple projects
+As a consequence I have the tests as part of the unique project and
+The second test client application (windows .net Core UI) in another project
+
+Got my token from git repository and tested that that api works OK
+Adapted my Models definitions to match the incoming data (name wise)
+Setup the remote call (to github) to use my token in the project (appsetings.json).
+Did the coding of the whole projected.
+Used DependencyInjection where it was posible.
+
+
+Further development:
+I got the API calls working 
+I added an echotest api to use as a ping
+I implemened the dpendency injection of the settings from appsettings.json (added in an Utils folder)
+
+I created Unit Tests for bot Controllers but for some reason I couldn't run them
+They compile OK but don't run
+Web search came up with some specific sugestions which I applied but no luck
+
+Created a Windows App to be used as a test client in a second project and for it
+It had to be developed in a separate project as my VS2022 was fussy about multiple projects
+It has an installer so one can just install it and use it as a client to hit the new api
+
+Everything is now in the provided file.
